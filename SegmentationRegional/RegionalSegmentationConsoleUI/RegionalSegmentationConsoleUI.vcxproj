@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug_OpenCV_Qt|Win32">
+      <Configuration>Debug_OpenCV_Qt</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug_OpenCV|Win32">
+      <Configuration>Debug_OpenCV</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_OpenCV_Qt|Win32">
+      <Configuration>Release_OpenCV_Qt</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_OpenCV|Win32">
+      <Configuration>Release_OpenCV</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\main.cpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{0BFB68C2-7C3F-423C-9619-6D10E930762D}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>RegionalSegmentationConsoleUI</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_OpenCV_Qt|Win32'">
+    <OutDir>$(SolutionDir)Builds\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_OpenCV_Qt|Win32'">
+    <IntDir>Builds\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_OpenCV|Win32'">
+    <OutDir>$(SolutionDir)Builds\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_OpenCV|Win32'">
+    <IntDir>Builds\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_OpenCV_Qt|Win32'">
+    <OutDir>$(SolutionDir)Builds\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_OpenCV_Qt|Win32'">
+    <IntDir>Builds\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_OpenCV|Win32'">
+    <OutDir>$(SolutionDir)Builds\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_OpenCV|Win32'">
+    <IntDir>Builds\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_OpenCV_Qt|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\LevelSetSegmentation\h;D:\OpenCV\Builds\WithQt\install\include;D:\DropBox\GMock\gmock-1.6.0\gtest\include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>..\Builds\Release_OpenCV_Qt;D:\OpenCV\Builds\WithQt\install\lib;D:\DropBox\GMock\GMock\gtest\Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>LevelSetSegmentation_Qt.lib;opencv_core229.lib;opencv_highgui229.lib;opencv_imgproc229.lib;opencv_features2d229.lib;gtest.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_OpenCV|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\LevelSetSegmentation\h;D:\OpenCV\Builds\Basic\install\include;D:\DropBox\GMock\gmock-1.6.0\gtest\include</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>..\Builds\Debug_OpenCV;D:\OpenCV\Builds\Basic\install\lib;D:\DropBox\GMock\GMock\gtest\Debug</AdditionalLibraryDirectories>
+      <AdditionalDependencies>LevelSetSegmentationd.lib;opencv_core229d.lib;opencv_highgui229d.lib;opencv_imgproc229d.lib;opencv_features2d229d.lib;gtest.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_OpenCV_Qt|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\LevelSetSegmentation\h;D:\OpenCV\Builds\WithQt\install\include;D:\DropBox\GMock\gmock-1.6.0\gtest\include</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>..\Builds\Debug_OpenCV_Qt;D:\OpenCV\Builds\WithQt\install\lib;D:\DropBox\GMock\GMock\gtest\Debug</AdditionalLibraryDirectories>
+      <AdditionalDependencies>LevelSetSegmentationd_Qt.lib;opencv_core229d.lib;opencv_highgui229d.lib;opencv_imgproc229d.lib;opencv_features2d229d.lib;gtest.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_OpenCV|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\LevelSetSegmentation\h;D:\OpenCV\Builds\Basic\install\include;D:\DropBox\GMock\gmock-1.6.0\gtest\include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>..\Builds\Release_OpenCV;D:\OpenCV\Builds\Basic\install\lib;D:\DropBox\GMock\GMock\gtest\Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>LevelSetSegmentation.lib;opencv_core229.lib;opencv_highgui229.lib;opencv_imgproc229.lib;opencv_features2d229.lib;gtest.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

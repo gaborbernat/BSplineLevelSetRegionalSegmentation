@@ -1,0 +1,14 @@
+<RCC>
+  <qresource prefix="RegionalSegmentationUI">
+    <file>Resources/Icons/App/Blink 3D.ico</file>
+    <file>Resources/Icons/Buttons/AppIcons.ico</file>
+    <file>Resources/Icons/Tabs/Bug.ICO</file>
+  </qresource>
+  <qresource prefix="Buttons">
+    <file>Resources/Icons/Buttons/black.ico</file>
+  </qresource>
+  <qresource prefix="Icon Tabs">
+    <file>Resources/Icons/Buttons/Paint (6).ico</file>
+    <file>Resources/Icons/Tabs/Adobe - Photoshop (11).ico</file>
+  </qresource>
+</RCC>

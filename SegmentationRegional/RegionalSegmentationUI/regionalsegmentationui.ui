@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>RegionalSegmentationUIClass</class>
+ <widget class="QDialog" name="RegionalSegmentationUIClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>748</width>
+    <height>530</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>740</width>
+    <height>530</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <family>Constantia</family>
+    <pointsize>10</pointsize>
+   </font>
+  </property>
+  <property name="cursor">
+   <cursorShape>ArrowCursor</cursorShape>
+  </property>
+  <property name="windowTitle">
+   <string>RegionalSegmentationUI</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="regionalsegmentationui.qrc">
+    <normaloff>:/RegionalSegmentationUI/Resources/Icons/App/Blink 3D.ico</normaloff>:/RegionalSegmentationUI/Resources/Icons/App/Blink 3D.ico</iconset>
+  </property>
+  <property name="toolTip">
+   <string>An application to perform regional picture segmentation. </string>
+  </property>
+  <layout class="QGridLayout" name="mainGridLayout">
+   <property name="margin">
+    <number>2</number>
+   </property>
+   <property name="spacing">
+    <number>3</number>
+   </property>
+   <item row="0" column="1" rowspan="10">
+    <widget class="QTabWidget" name="tabWidget">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>200</width>
+       <height>200</height>
+      </size>
+     </property>
+     <property name="cursor">
+      <cursorShape>ArrowCursor</cursorShape>
+     </property>
+     <property name="toolTip">
+      <string>:)</string>
+     </property>
+     <property name="tabPosition">
+      <enum>QTabWidget::South</enum>
+     </property>
+     <property name="tabShape">
+      <enum>QTabWidget::Rounded</enum>
+     </property>
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>24</width>
+       <height>16</height>
+      </size>
+     </property>
+     <property name="elideMode">
+      <enum>Qt::ElideNone</enum>
+     </property>
+     <property name="usesScrollButtons">
+      <bool>false</bool>
+     </property>
+     <property name="documentMode">
+      <bool>false</bool>
+     </property>
+     <property name="tabsClosable">
+      <bool>false</bool>
+     </property>
+     <property name="movable">
+      <bool>true</bool>
+     </property>
+     <widget class="QWidget" name="tabImage2D">
+      <attribute name="icon">
+       <iconset resource="regionalsegmentationui.qrc">
+        <normaloff>:/RegionalSegmentationUI/Resources/Icons/Tabs/Bug.ICO</normaloff>:/RegionalSegmentationUI/Resources/Icons/Tabs/Bug.ICO</iconset>
+      </attribute>
+      <attribute name="title">
+       <string>2D Images</string>
+      </attribute>
+      <attribute name="toolTip">
+       <string>Regional Segmentation for 2D images.</string>
+      </attribute>
+      <layout class="QHBoxLayout" name="tab2DHorizontalLayout"/>
+     </widget>
+     <widget class="QWidget" name="tabImageLevelSet3D">
+      <attribute name="icon">
+       <iconset resource="regionalsegmentationui.qrc">
+        <normaloff>:/Icon Tabs/Resources/Icons/Tabs/Adobe - Photoshop (11).ico</normaloff>:/Icon Tabs/Resources/Icons/Tabs/Adobe - Photoshop (11).ico</iconset>
+      </attribute>
+      <attribute name="title">
+       <string>Level Set Function Representation</string>
+      </attribute>
+      <attribute name="toolTip">
+       <string>View the level set function of the mask (image) in 3D.</string>
+      </attribute>
+      <layout class="QHBoxLayout" name="tab3DHorizontalLayout"/>
+     </widget>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <spacer name="verticalSpacer1">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>10</width>
+       <height>10</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="4" column="0">
+    <widget class="QToolButton" name="drawMaskButton">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>70</width>
+       <height>70</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>96</width>
+       <height>96</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+     <property name="toolTip">
+      <string>Draw the mask that determinates the initial levelset function.</string>
+     </property>
+     <property name="text">
+      <string>Draw Mask</string>
+     </property>
+     <property name="icon">
+      <iconset resource="regionalsegmentationui.qrc">
+       <normaloff>:/Icon Tabs/Resources/Icons/Buttons/Paint (6).ico</normaloff>:/Icon Tabs/Resources/Icons/Buttons/Paint (6).ico</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>48</width>
+       <height>48</height>
+      </size>
+     </property>
+     <property name="shortcut">
+      <string>D</string>
+     </property>
+     <property name="toolButtonStyle">
+      <enum>Qt::ToolButtonTextUnderIcon</enum>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="0">
+    <spacer name="verticalSpacer2">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>10</width>
+       <height>10</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="2" column="0">
+    <widget class="QToolButton" name="openImageButton">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>70</width>
+       <height>70</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>96</width>
+       <height>96</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+     <property name="toolTip">
+      <string>Open image(s) to process with the algorithm.</string>
+     </property>
+     <property name="text">
+      <string>Open Image</string>
+     </property>
+     <property name="icon">
+      <iconset resource="regionalsegmentationui.qrc">
+       <normaloff>:/Buttons/Resources/Icons/Buttons/black.ico</normaloff>:/Buttons/Resources/Icons/Buttons/black.ico</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>48</width>
+       <height>48</height>
+      </size>
+     </property>
+     <property name="shortcut">
+      <string>O</string>
+     </property>
+     <property name="toolButtonStyle">
+      <enum>Qt::ToolButtonTextUnderIcon</enum>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="0">
+    <spacer name="verticalSpacer4">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>10</width>
+       <height>10</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="10" column="0" colspan="2">
+    <widget class="QTextBrowser" name="textBrowser">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>200</width>
+       <height>32</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>120</height>
+      </size>
+     </property>
+     <property name="acceptDrops">
+      <bool>false</bool>
+     </property>
+     <property name="toolTip">
+      <string>Shows various infos to the user.</string>
+     </property>
+     <property name="undoRedoEnabled">
+      <bool>false</bool>
+     </property>
+     <property name="textInteractionFlags">
+      <set>Qt::LinksAccessibleByKeyboard|Qt::LinksAccessibleByMouse|Qt::TextBrowserInteraction|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
+     </property>
+    </widget>
+   </item>
+   <item row="8" column="0">
+    <widget class="QGroupBox" name="groupBoxParameters">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>96</width>
+       <height>150</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>96</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <family>Constantia</family>
+       <italic>true</italic>
+      </font>
+     </property>
+     <property name="toolTip">
+      <string>Fine tune here the parameters for the algorithm. Hover over them to find out what each one of them does.</string>
+     </property>
+     <property name="title">
+      <string>Parameters</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignJustify|Qt::AlignVCenter</set>
+     </property>
+     <property name="checkable">
+      <bool>false</bool>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <property name="leftMargin">
+       <number>2</number>
+      </property>
+      <property name="topMargin">
+       <number>6</number>
+      </property>
+      <property name="rightMargin">
+       <number>2</number>
+      </property>
+      <property name="bottomMargin">
+       <number>3</number>
+      </property>
+      <item row="0" column="0">
+       <widget class="QLabel" name="label">
+        <property name="toolTip">
+         <string>It is possible to throw away some data and work on a smaller data set. Thus the thrown away pixels will be interpolated from the surrounding ones. Use this to decrease the run-time and have a less rough contour.</string>
+        </property>
+        <property name="text">
+         <string>Scale:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QSpinBox" name="spinBoxScale">
+        <property name="toolTip">
+         <string>It is possible to throw away some data and work on a smaller data set. Thus the thrown away pixels will be interpolated from the surrounding ones. Use this to decrease the run-time and have a less rough contour.</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+        <property name="maximum">
+         <number>4</number>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0" colspan="2">
+       <widget class="QLabel" name="label_2">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="toolTip">
+         <string>The algorithm will run until for 5 loops we have a change (counted in different pixel values on the mask) lower than the value specified here.</string>
+        </property>
+        <property name="text">
+         <string>Precision (pixels):</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0" colspan="2">
+       <widget class="QSpinBox" name="spinBoxPrecision">
+        <property name="toolTip">
+         <string>The algorithm will run until for 5 loops we have a change (counted in different pixel values on the mask) lower than the value specified here.</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+        <property name="maximum">
+         <number>120000</number>
+        </property>
+        <property name="value">
+         <number>20</number>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0" colspan="2">
+       <widget class="QLabel" name="label_3">
+        <property name="font">
+         <font>
+          <family>Constantia</family>
+          <pointsize>9</pointsize>
+          <italic>true</italic>
+         </font>
+        </property>
+        <property name="toolTip">
+         <string>How many minimization iterations you want to allow for the algorithm before it stops.</string>
+        </property>
+        <property name="text">
+         <string>Max. Iterations</string>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0" colspan="2">
+       <widget class="QSpinBox" name="spinBoxMaxIteration">
+        <property name="toolTip">
+         <string>How many minimization iterations you want to allow for the algorithm before it stops.</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+        <property name="maximum">
+         <number>120000</number>
+        </property>
+        <property name="value">
+         <number>100</number>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="0" colspan="2">
+       <widget class="QLabel" name="label_4">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="toolTip">
+         <string>The time to pause between iterations in order to allow for draw operations and interactions with the user for the intermediate data.</string>
+        </property>
+        <property name="text">
+         <string>Draw Delay(ms):</string>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="0" colspan="2">
+       <widget class="QSpinBox" name="spinBoxDrawDelay">
+        <property name="toolTip">
+         <string>The time to pause between iterations in order to allow for draw operations and interactions with the user for the intermediate data.</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+        <property name="suffix">
+         <string extracomment="S"/>
+        </property>
+        <property name="minimum">
+         <number>1</number>
+        </property>
+        <property name="maximum">
+         <number>120000</number>
+        </property>
+        <property name="value">
+         <number>20</number>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="6" column="0">
+    <widget class="QToolButton" name="runButton">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>70</width>
+       <height>70</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>96</width>
+       <height>96</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+     <property name="toolTip">
+      <string>Run the algorithm.</string>
+     </property>
+     <property name="text">
+      <string>Run</string>
+     </property>
+     <property name="icon">
+      <iconset resource="regionalsegmentationui.qrc">
+       <normaloff>:/RegionalSegmentationUI/Resources/Icons/Buttons/AppIcons.ico</normaloff>:/RegionalSegmentationUI/Resources/Icons/Buttons/AppIcons.ico</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>48</width>
+       <height>48</height>
+      </size>
+     </property>
+     <property name="shortcut">
+      <string>R</string>
+     </property>
+     <property name="toolButtonStyle">
+      <enum>Qt::ToolButtonTextUnderIcon</enum>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="regionalsegmentationui.qrc"/>
+ </resources>
+ <connections/>
+</ui>

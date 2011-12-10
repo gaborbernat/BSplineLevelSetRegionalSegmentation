@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LevelSetSegmentation", "LevelSetSegmentation\LevelSetSegmentation.vcxproj", "{6F70846B-0231-481C-A434-B3FD5E5FC588}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RegionalSegmentationConsoleUI", "RegionalSegmentationConsoleUI\RegionalSegmentationConsoleUI.vcxproj", "{0BFB68C2-7C3F-423C-9619-6D10E930762D}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6F70846B-0231-481C-A434-B3FD5E5FC588} = {6F70846B-0231-481C-A434-B3FD5E5FC588}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RegionalSegmentationUI", "RegionalSegmentationUI\RegionalSegmentationUI.vcxproj", "{11378569-C134-42D4-B15B-21681204FA36}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6F70846B-0231-481C-A434-B3FD5E5FC588} = {6F70846B-0231-481C-A434-B3FD5E5FC588}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug_OpenCV_Qt|Win32 = Debug_OpenCV_Qt|Win32
+		Debug_OpenCV|Win32 = Debug_OpenCV|Win32
+		Release_OpenCV_Qt|Win32 = Release_OpenCV_Qt|Win32
+		Release_OpenCV|Win32 = Release_OpenCV|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6F70846B-0231-481C-A434-B3FD5E5FC588}.Debug_OpenCV_Qt|Win32.ActiveCfg = Debug_OpenCV_Qt|Win32
+		{6F70846B-0231-481C-A434-B3FD5E5FC588}.Debug_OpenCV_Qt|Win32.Build.0 = Debug_OpenCV_Qt|Win32
+		{6F70846B-0231-481C-A434-B3FD5E5FC588}.Debug_OpenCV|Win32.ActiveCfg = Debug_OpenCV|Win32
+		{6F70846B-0231-481C-A434-B3FD5E5FC588}.Debug_OpenCV|Win32.Build.0 = Debug_OpenCV|Win32
+		{6F70846B-0231-481C-A434-B3FD5E5FC588}.Release_OpenCV_Qt|Win32.ActiveCfg = Release_OpenCV_Qt|Win32
+		{6F70846B-0231-481C-A434-B3FD5E5FC588}.Release_OpenCV_Qt|Win32.Build.0 = Release_OpenCV_Qt|Win32
+		{6F70846B-0231-481C-A434-B3FD5E5FC588}.Release_OpenCV|Win32.ActiveCfg = Release_OpenCV|Win32
+		{6F70846B-0231-481C-A434-B3FD5E5FC588}.Release_OpenCV|Win32.Build.0 = Release_OpenCV|Win32
+		{0BFB68C2-7C3F-423C-9619-6D10E930762D}.Debug_OpenCV_Qt|Win32.ActiveCfg = Debug_OpenCV_Qt|Win32
+		{0BFB68C2-7C3F-423C-9619-6D10E930762D}.Debug_OpenCV_Qt|Win32.Build.0 = Debug_OpenCV_Qt|Win32
+		{0BFB68C2-7C3F-423C-9619-6D10E930762D}.Debug_OpenCV|Win32.ActiveCfg = Debug_OpenCV|Win32
+		{0BFB68C2-7C3F-423C-9619-6D10E930762D}.Debug_OpenCV|Win32.Build.0 = Debug_OpenCV|Win32
+		{0BFB68C2-7C3F-423C-9619-6D10E930762D}.Release_OpenCV_Qt|Win32.ActiveCfg = Release_OpenCV_Qt|Win32
+		{0BFB68C2-7C3F-423C-9619-6D10E930762D}.Release_OpenCV_Qt|Win32.Build.0 = Release_OpenCV_Qt|Win32
+		{0BFB68C2-7C3F-423C-9619-6D10E930762D}.Release_OpenCV|Win32.ActiveCfg = Release_OpenCV|Win32
+		{0BFB68C2-7C3F-423C-9619-6D10E930762D}.Release_OpenCV|Win32.Build.0 = Release_OpenCV|Win32
+		{11378569-C134-42D4-B15B-21681204FA36}.Debug_OpenCV_Qt|Win32.ActiveCfg = Debug|Win32
+		{11378569-C134-42D4-B15B-21681204FA36}.Debug_OpenCV_Qt|Win32.Build.0 = Debug|Win32
+		{11378569-C134-42D4-B15B-21681204FA36}.Debug_OpenCV|Win32.ActiveCfg = Debug|Win32
+		{11378569-C134-42D4-B15B-21681204FA36}.Debug_OpenCV|Win32.Build.0 = Debug|Win32
+		{11378569-C134-42D4-B15B-21681204FA36}.Release_OpenCV_Qt|Win32.ActiveCfg = Release|Win32
+		{11378569-C134-42D4-B15B-21681204FA36}.Release_OpenCV_Qt|Win32.Build.0 = Release|Win32
+		{11378569-C134-42D4-B15B-21681204FA36}.Release_OpenCV|Win32.ActiveCfg = Release|Win32
+		{11378569-C134-42D4-B15B-21681204FA36}.Release_OpenCV|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

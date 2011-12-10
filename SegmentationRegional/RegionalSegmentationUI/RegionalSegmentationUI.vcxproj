@@ -1,0 +1,319 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{11378569-C134-42D4-B15B-21681204FA36}</ProjectGuid>
+    <Keyword>Qt4VSv1.0</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)Builds\Debug_OpenCV_Qt\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)Builds\Release_OpenCV_Qt\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Builds\$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Builds\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>UNICODE;WIN32;QT_LARGEFILE_SUPPORT;QT_CORE_LIB;QT_GUI_LIB;QT_OPENGL_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\Dep\Qt-OpenCV-Window;..\Dep\qwtplot3d-0.2.7\qwtplot3d\3rdparty\gl2ps;..\Dep\qwtplot3d-0.2.7\qwtplot3d\include;..\LevelSetSegmentation\h;D:\OpenCV\Builds\Basic\install\include;D:\DropBox\GMock\gmock-1.6.0\gtest\include;.\GeneratedFiles;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName);$(QTDIR)\include\qtmain;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtOpenGL;.\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>Disabled</Optimization>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>$(OutDir)\$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>..\Builds\Debug_OpenCV_Qt;D:\OpenCV\Builds\Basic\install\lib;D:\DropBox\GMock\GMock\gtest\Debug;$(QTDIR)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>LevelSetSegmentationd_Qt.lib;opencv_core229d.lib;opencv_highgui229d.lib;opencv_imgproc229d.lib;opencv_features2d229d.lib;gtest.lib;qtmaind.lib;QtCored4.lib;QtGuid4.lib;QtOpenGLd4.lib;opengl32.lib;glu32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>UNICODE;WIN32;QT_LARGEFILE_SUPPORT;QT_NO_DEBUG;NDEBUG;QT_CORE_LIB;QT_GUI_LIB;QT_OPENGL_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\Dep\Qt-OpenCV-Window;..\Dep\qwtplot3d-0.2.7\qwtplot3d\3rdparty\gl2ps;..\Dep\qwtplot3d-0.2.7\qwtplot3d\include;..\LevelSetSegmentation\h;D:\OpenCV\Builds\Basic\install\include;D:\DropBox\GMock\gmock-1.6.0\gtest\include;.\GeneratedFiles;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName);$(QTDIR)\include\qtmain;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtOpenGL;.\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>$(OutDir)\$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>..\Builds\Release_OpenCV_Qt;D:\OpenCV\Builds\WithQt\install\lib;D:\DropBox\GMock\GMock\gtest\Release;$(QTDIR)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <AdditionalDependencies>LevelSetSegmentation_Qt.lib;opencv_core229.lib;opencv_highgui229.lib;opencv_imgproc229.lib;opencv_features2d229.lib;gtest.lib;qtmain.lib;QtCore4.lib;QtGui4.lib;QtOpenGL4.lib;opengl32.lib;glu32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Dep\Qt-OpenCV-Window\QtOpenCvWidget.cpp" />
+    <ClCompile Include="..\Dep\qwtplot3d-0.2.7\qwtplot3d\3rdparty\gl2ps\gl2ps.c" />
+    <ClCompile Include="..\Dep\qwtplot3d-0.2.7\qwtplot3d\src\qwt3d_autoscaler.cpp" />
+    <ClCompile Include="..\Dep\qwtplot3d-0.2.7\qwtplot3d\src\qwt3d_axis.cpp" />
+    <ClCompile Include="..\Dep\qwtplot3d-0.2.7\qwtplot3d\src\qwt3d_color.cpp" />
+    <ClCompile Include="..\Dep\qwtplot3d-0.2.7\qwtplot3d\src\qwt3d_colorlegend.cpp" />
+    <ClCompile Include="..\Dep\qwtplot3d-0.2.7\qwtplot3d\src\qwt3d_coordsys.cpp" />
+    <ClCompile Include="..\Dep\qwtplot3d-0.2.7\qwtplot3d\src\qwt3d_dataviews.cpp" />
+    <ClCompile Include="..\Dep\qwtplot3d-0.2.7\qwtplot3d\src\qwt3d_drawable.cpp" />
+    <ClCompile Include="..\Dep\qwtplot3d-0.2.7\qwtplot3d\src\qwt3d_enrichment_std.cpp" />
+    <ClCompile Include="..\Dep\qwtplot3d-0.2.7\qwtplot3d\src\qwt3d_function.cpp" />
+    <ClCompile Include="..\Dep\qwtplot3d-0.2.7\qwtplot3d\src\qwt3d_gridmapping.cpp" />
+    <ClCompile Include="..\Dep\qwtplot3d-0.2.7\qwtplot3d\src\qwt3d_gridplot.cpp" />
+    <ClCompile Include="..\Dep\qwtplot3d-0.2.7\qwtplot3d\src\qwt3d_io.cpp" />
+    <ClCompile Include="..\Dep\qwtplot3d-0.2.7\qwtplot3d\src\qwt3d_io_gl2ps.cpp" />
+    <ClCompile Include="..\Dep\qwtplot3d-0.2.7\qwtplot3d\src\qwt3d_io_reader.cpp" />
+    <ClCompile Include="..\Dep\qwtplot3d-0.2.7\qwtplot3d\src\qwt3d_label.cpp" />
+    <ClCompile Include="..\Dep\qwtplot3d-0.2.7\qwtplot3d\src\qwt3d_lighting.cpp" />
+    <ClCompile Include="..\Dep\qwtplot3d-0.2.7\qwtplot3d\src\qwt3d_meshplot.cpp" />
+    <ClCompile Include="..\Dep\qwtplot3d-0.2.7\qwtplot3d\src\qwt3d_mousekeyboard.cpp" />
+    <ClCompile Include="..\Dep\qwtplot3d-0.2.7\qwtplot3d\src\qwt3d_movements.cpp" />
+    <ClCompile Include="..\Dep\qwtplot3d-0.2.7\qwtplot3d\src\qwt3d_parametricsurface.cpp" />
+    <ClCompile Include="..\Dep\qwtplot3d-0.2.7\qwtplot3d\src\qwt3d_plot.cpp" />
+    <ClCompile Include="..\Dep\qwtplot3d-0.2.7\qwtplot3d\src\qwt3d_scale.cpp" />
+    <ClCompile Include="..\Dep\qwtplot3d-0.2.7\qwtplot3d\src\qwt3d_surfaceplot.cpp" />
+    <ClCompile Include="..\Dep\qwtplot3d-0.2.7\qwtplot3d\src\qwt3d_types.cpp" />
+    <ClCompile Include="GeneratedFiles\Debug\moc_QtOpenCvWidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_qwt3d_plot.cpp" />
+    <ClCompile Include="GeneratedFiles\Debug\moc_qwt3d_surfaceplot.cpp" />
+    <ClCompile Include="GeneratedFiles\Debug\moc_regionalsegmentationui.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_RegionalSegmentationWorker.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\qrc_regionalsegmentationui.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\qrc_window_QT.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_QtOpenCvWidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_qwt3d_plot.cpp" />
+    <ClCompile Include="GeneratedFiles\Release\moc_qwt3d_surfaceplot.cpp" />
+    <ClCompile Include="GeneratedFiles\Release\moc_regionalsegmentationui.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_RegionalSegmentationWorker.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="regionalsegmentationui.cpp" />
+    <ClCompile Include="RegionalSegmentationWorker.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="regionalsegmentationui.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -DQT_OPENGL_LIB  "-I." "-I.\..\Dep\Qt-OpenCV-Window" "-I.\..\Dep\qwtplot3d-0.2.7\qwtplot3d\3rdparty\gl2ps" "-I.\..\Dep\qwtplot3d-0.2.7\qwtplot3d\include" "-I.\..\LevelSetSegmentation\h" "-ID:\OpenCV\Builds\Basic\install\include" "-ID:\DropBox\GMock\gmock-1.6.0\gtest\include" "-I.\GeneratedFiles" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\qtmain" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtOpenGL" "-I." "-I." "-I." "-I." "regionalsegmentationui.h" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_OPENGL_LIB  "-I." "-I.\..\Dep\Qt-OpenCV-Window" "-I.\..\Dep\qwtplot3d-0.2.7\qwtplot3d\3rdparty\gl2ps" "-I.\..\Dep\qwtplot3d-0.2.7\qwtplot3d\include" "-I.\..\LevelSetSegmentation\h" "-ID:\OpenCV\Builds\Basic\install\include" "-ID:\DropBox\GMock\gmock-1.6.0\gtest\include" "-I.\GeneratedFiles" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\qtmain" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtOpenGL" "-I." "-I." "-I." "-I." "regionalsegmentationui.h" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="regionalsegmentationui.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GeneratedFiles\ui_regionalsegmentationui.h" />
+    <CustomBuild Include="RegionalSegmentationWorker.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -DQT_OPENGL_LIB "-I." "-I.\..\Dep\Qt-OpenCV-Window" "-I.\..\Dep\qwtplot3d-0.2.7\qwtplot3d\3rdparty\gl2ps" "-I.\..\Dep\qwtplot3d-0.2.7\qwtplot3d\include" "-I.\..\LevelSetSegmentation\h" "-ID:\OpenCV\Builds\Basic\install\include" "-ID:\DropBox\GMock\gmock-1.6.0\gtest\include" "-I.\GeneratedFiles" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\qtmain" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtOpenGL" "-I." "-I." "-I." "-I."</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_OPENGL_LIB "-I." "-I.\..\Dep\Qt-OpenCV-Window" "-I.\..\Dep\qwtplot3d-0.2.7\qwtplot3d\3rdparty\gl2ps" "-I.\..\Dep\qwtplot3d-0.2.7\qwtplot3d\include" "-I.\..\LevelSetSegmentation\h" "-ID:\OpenCV\Builds\Basic\install\include" "-ID:\DropBox\GMock\gmock-1.6.0\gtest\include" "-I.\GeneratedFiles" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\qtmain" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtOpenGL" "-I." "-I." "-I." "-I."</Command>
+    </CustomBuild>
+    <CustomBuild Include="..\Dep\Qt-OpenCV-Window\QtOpenCvWidget.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -DQT_OPENGL_LIB  "-I." "-I.\..\Dep\Qt-OpenCV-Window" "-I.\..\Dep\qwtplot3d-0.2.7\qwtplot3d\3rdparty\gl2ps" "-I.\..\Dep\qwtplot3d-0.2.7\qwtplot3d\include" "-I.\..\LevelSetSegmentation\h" "-ID:\OpenCV\Builds\Basic\install\include" "-ID:\DropBox\GMock\gmock-1.6.0\gtest\include" "-I.\GeneratedFiles" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\qtmain" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtOpenGL" "-I." "-I." "-I." "-I." "..\Dep\Qt-OpenCV-Window\QtOpenCvWidget.h" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_OPENGL_LIB  "-I." "-I.\..\Dep\Qt-OpenCV-Window" "-I.\..\Dep\qwtplot3d-0.2.7\qwtplot3d\3rdparty\gl2ps" "-I.\..\Dep\qwtplot3d-0.2.7\qwtplot3d\include" "-I.\..\LevelSetSegmentation\h" "-ID:\OpenCV\Builds\Basic\install\include" "-ID:\DropBox\GMock\gmock-1.6.0\gtest\include" "-I.\GeneratedFiles" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\qtmain" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtOpenGL" "-I." "-I." "-I." "-I." "..\Dep\Qt-OpenCV-Window\QtOpenCvWidget.h" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+    </CustomBuild>
+    <ClInclude Include="..\Dep\qwtplot3d-0.2.7\qwtplot3d\3rdparty\gl2ps\gl2ps.h" />
+    <ClInclude Include="..\Dep\qwtplot3d-0.2.7\qwtplot3d\include\qwt3d_autoptr.h" />
+    <ClInclude Include="..\Dep\qwtplot3d-0.2.7\qwtplot3d\include\qwt3d_autoscaler.h" />
+    <ClInclude Include="..\Dep\qwtplot3d-0.2.7\qwtplot3d\include\qwt3d_axis.h" />
+    <ClInclude Include="..\Dep\qwtplot3d-0.2.7\qwtplot3d\include\qwt3d_color.h" />
+    <ClInclude Include="..\Dep\qwtplot3d-0.2.7\qwtplot3d\include\qwt3d_colorlegend.h" />
+    <ClInclude Include="..\Dep\qwtplot3d-0.2.7\qwtplot3d\include\qwt3d_coordsys.h" />
+    <ClInclude Include="..\Dep\qwtplot3d-0.2.7\qwtplot3d\include\qwt3d_drawable.h" />
+    <ClInclude Include="..\Dep\qwtplot3d-0.2.7\qwtplot3d\include\qwt3d_enrichment.h" />
+    <ClInclude Include="..\Dep\qwtplot3d-0.2.7\qwtplot3d\include\qwt3d_enrichment_std.h" />
+    <ClInclude Include="..\Dep\qwtplot3d-0.2.7\qwtplot3d\include\qwt3d_function.h" />
+    <ClInclude Include="..\Dep\qwtplot3d-0.2.7\qwtplot3d\include\qwt3d_global.h" />
+    <ClInclude Include="..\Dep\qwtplot3d-0.2.7\qwtplot3d\include\qwt3d_graphplot.h" />
+    <ClInclude Include="..\Dep\qwtplot3d-0.2.7\qwtplot3d\include\qwt3d_gridmapping.h" />
+    <ClInclude Include="..\Dep\qwtplot3d-0.2.7\qwtplot3d\include\qwt3d_helper.h" />
+    <ClInclude Include="..\Dep\qwtplot3d-0.2.7\qwtplot3d\include\qwt3d_io.h" />
+    <ClInclude Include="..\Dep\qwtplot3d-0.2.7\qwtplot3d\include\qwt3d_io_gl2ps.h" />
+    <ClInclude Include="..\Dep\qwtplot3d-0.2.7\qwtplot3d\include\qwt3d_io_reader.h" />
+    <ClInclude Include="..\Dep\qwtplot3d-0.2.7\qwtplot3d\include\qwt3d_label.h" />
+    <ClInclude Include="..\Dep\qwtplot3d-0.2.7\qwtplot3d\include\qwt3d_mapping.h" />
+    <ClInclude Include="..\Dep\qwtplot3d-0.2.7\qwtplot3d\include\qwt3d_multiplot.h" />
+    <ClInclude Include="..\Dep\qwtplot3d-0.2.7\qwtplot3d\include\qwt3d_openglhelper.h" />
+    <ClInclude Include="..\Dep\qwtplot3d-0.2.7\qwtplot3d\include\qwt3d_parametricsurface.h" />
+    <ClInclude Include="..\Dep\qwtplot3d-0.2.7\qwtplot3d\include\qwt3d_portability.h" />
+    <ClInclude Include="..\Dep\qwtplot3d-0.2.7\qwtplot3d\include\qwt3d_scale.h" />
+    <ClInclude Include="..\Dep\qwtplot3d-0.2.7\qwtplot3d\include\qwt3d_types.h" />
+    <ClInclude Include="..\Dep\qwtplot3d-0.2.7\qwtplot3d\include\qwt3d_volumeplot.h" />
+    <CustomBuild Include="..\Dep\qwtplot3d-0.2.7\qwtplot3d\include\qwt3d_surfaceplot.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -DQT_OPENGL_LIB  "-I." "-I.\..\Dep\Qt-OpenCV-Window" "-I.\..\Dep\qwtplot3d-0.2.7\qwtplot3d\3rdparty\gl2ps" "-I.\..\Dep\qwtplot3d-0.2.7\qwtplot3d\include" "-I.\..\LevelSetSegmentation\h" "-ID:\OpenCV\Builds\Basic\install\include" "-ID:\DropBox\GMock\gmock-1.6.0\gtest\include" "-I.\GeneratedFiles" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\qtmain" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtOpenGL" "-I." "-I." "-I." "-I." "..\Dep\qwtplot3d-0.2.7\qwtplot3d\include\qwt3d_surfaceplot.h" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_OPENGL_LIB  "-I." "-I.\..\Dep\Qt-OpenCV-Window" "-I.\..\Dep\qwtplot3d-0.2.7\qwtplot3d\3rdparty\gl2ps" "-I.\..\Dep\qwtplot3d-0.2.7\qwtplot3d\include" "-I.\..\LevelSetSegmentation\h" "-ID:\OpenCV\Builds\Basic\install\include" "-ID:\DropBox\GMock\gmock-1.6.0\gtest\include" "-I.\GeneratedFiles" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\qtmain" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtOpenGL" "-I." "-I." "-I." "-I." "..\Dep\qwtplot3d-0.2.7\qwtplot3d\include\qwt3d_surfaceplot.h" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+    </CustomBuild>
+    <CustomBuild Include="..\Dep\qwtplot3d-0.2.7\qwtplot3d\include\qwt3d_plot.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_CORE_LIB -DQT_GUI_LIB -DQT_OPENGL_LIB  "-I." "-I.\..\Dep\Qt-OpenCV-Window" "-I.\..\Dep\qwtplot3d-0.2.7\qwtplot3d\3rdparty\gl2ps" "-I.\..\Dep\qwtplot3d-0.2.7\qwtplot3d\include" "-I.\..\LevelSetSegmentation\h" "-ID:\OpenCV\Builds\Basic\install\include" "-ID:\DropBox\GMock\gmock-1.6.0\gtest\include" "-I.\GeneratedFiles" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\qtmain" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtOpenGL" "-I." "-I." "-I." "-I." "..\Dep\qwtplot3d-0.2.7\qwtplot3d\include\qwt3d_plot.h" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"   -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_OPENGL_LIB  "-I." "-I.\..\Dep\Qt-OpenCV-Window" "-I.\..\Dep\qwtplot3d-0.2.7\qwtplot3d\3rdparty\gl2ps" "-I.\..\Dep\qwtplot3d-0.2.7\qwtplot3d\include" "-I.\..\LevelSetSegmentation\h" "-ID:\OpenCV\Builds\Basic\install\include" "-ID:\DropBox\GMock\gmock-1.6.0\gtest\include" "-I.\GeneratedFiles" "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\qtmain" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtOpenGL" "-I." "-I." "-I." "-I." "..\Dep\qwtplot3d-0.2.7\qwtplot3d\include\qwt3d_plot.h" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"</Command>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="regionalsegmentationui.qrc">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Rcc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\qrc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\rcc.exe" -name "%(Filename)" -no-compress "%(FullPath)" -o .\GeneratedFiles\qrc_%(Filename).cpp</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Rcc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\qrc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\rcc.exe" -name "%(Filename)" -no-compress "%(FullPath)" -o .\GeneratedFiles\qrc_%(Filename).cpp</Command>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\Dep\Qt-OpenCV-Window\window_QT.qrc">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(FullPath);..\Dep\Qt-OpenCV-Window\files_Qt\Milky\48\28.png;..\Dep\Qt-OpenCV-Window\files_Qt\Milky\48\23.png;..\Dep\Qt-OpenCV-Window\files_Qt\Milky\48\19.png;..\Dep\Qt-OpenCV-Window\files_Qt\Milky\48\24.png;..\Dep\Qt-OpenCV-Window\files_Qt\Milky\48\27.png;..\Dep\Qt-OpenCV-Window\files_Qt\Milky\48\61.png;..\Dep\Qt-OpenCV-Window\files_Qt\Milky\48\106.png;..\Dep\Qt-OpenCV-Window\files_Qt\Milky\48\107.png;..\Dep\Qt-OpenCV-Window\files_Qt\Milky\48\7.png;..\Dep\Qt-OpenCV-Window\files_Qt\Milky\48\38.png;..\Dep\Qt-OpenCV-Window\files_Qt\stylesheet_trackbar.qss;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Rcc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\qrc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\rcc.exe" -name "%(Filename)" -no-compress "%(FullPath)" -o .\GeneratedFiles\qrc_%(Filename).cpp</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(FullPath);..\Dep\Qt-OpenCV-Window\files_Qt\Milky\48\28.png;..\Dep\Qt-OpenCV-Window\files_Qt\Milky\48\23.png;..\Dep\Qt-OpenCV-Window\files_Qt\Milky\48\19.png;..\Dep\Qt-OpenCV-Window\files_Qt\Milky\48\24.png;..\Dep\Qt-OpenCV-Window\files_Qt\Milky\48\27.png;..\Dep\Qt-OpenCV-Window\files_Qt\Milky\48\61.png;..\Dep\Qt-OpenCV-Window\files_Qt\Milky\48\106.png;..\Dep\Qt-OpenCV-Window\files_Qt\Milky\48\107.png;..\Dep\Qt-OpenCV-Window\files_Qt\Milky\48\7.png;..\Dep\Qt-OpenCV-Window\files_Qt\Milky\48\38.png;..\Dep\Qt-OpenCV-Window\files_Qt\stylesheet_trackbar.qss;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Rcc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\qrc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\rcc.exe" -name "%(Filename)" -no-compress "%(FullPath)" -o .\GeneratedFiles\qrc_%(Filename).cpp</Command>
+    </CustomBuild>
+    <None Include="..\Dep\Qt-OpenCV-Window\files_Qt\Milky\48\106.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="..\Dep\Qt-OpenCV-Window\files_Qt\Milky\48\107.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="..\Dep\Qt-OpenCV-Window\files_Qt\Milky\48\19.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="..\Dep\Qt-OpenCV-Window\files_Qt\Milky\48\23.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="..\Dep\Qt-OpenCV-Window\files_Qt\Milky\48\24.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="..\Dep\Qt-OpenCV-Window\files_Qt\Milky\48\27.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="..\Dep\Qt-OpenCV-Window\files_Qt\Milky\48\28.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="..\Dep\Qt-OpenCV-Window\files_Qt\Milky\48\38.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="..\Dep\Qt-OpenCV-Window\files_Qt\Milky\48\61.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="..\Dep\Qt-OpenCV-Window\files_Qt\Milky\48\7.png">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+    <None Include="..\Dep\Qt-OpenCV-Window\files_Qt\stylesheet_trackbar.qss">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </None>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties UicDir=".\GeneratedFiles" MocDir=".\GeneratedFiles\$(ConfigurationName)" MocOptions="" RccDir=".\GeneratedFiles" lupdateOnBuild="0" lupdateOptions="" lreleaseOptions="" QtVersion_x0020_Win32="QT4.7.3_VS2010" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

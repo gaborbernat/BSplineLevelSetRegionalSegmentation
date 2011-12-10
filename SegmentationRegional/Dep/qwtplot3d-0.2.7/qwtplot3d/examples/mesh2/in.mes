@@ -1,0 +1,7 @@
+ jk:11051895-17021986                       //  magic string
+   MESH                                       //  MESH file (other keywords in future versions)
+   327 466                                    //  x,y grid
+   557726 567506                              //  domain boundaries (x values)
+   5.10821e+006 5.12216e+006                  //  domain boundaries (y values)
+   682 682 682 682 912 924 928 928 932 ... 
+   ... element[327*466-1]                     //  the single z values 

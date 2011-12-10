@@ -1,0 +1,327 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;cxx;c;def</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h</Extensions>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>moc;h;cpp</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Generated Files\Debug">
+      <UniqueIdentifier>{016a0689-d663-4e94-bf78-c185663ea138}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Generated Files\Release">
+      <UniqueIdentifier>{140ad3bc-2b71-43e4-9fe9-dea277d8b551}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Dependencies">
+      <UniqueIdentifier>{e179df06-5e23-4030-b84d-62b357fb2051}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dependencies\Qwt3D">
+      <UniqueIdentifier>{8cb6b808-0f19-4321-8307-7681b39a4c15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dependencies\Qwt3D\h">
+      <UniqueIdentifier>{d0320c08-0bb4-4ca4-87a9-ac8d69c5d7b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dependencies\Qwt3D\src">
+      <UniqueIdentifier>{4c3e98ec-181f-490f-85ac-2a7f45c34e82}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dependencies\gl2ps">
+      <UniqueIdentifier>{a3cdbac2-4097-4e59-87a9-1fc4aaf406ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dependencies\Qt-OpenCV-Window">
+      <UniqueIdentifier>{404dda90-8664-4ad6-872a-2bdaee6bb451}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="regionalsegmentationui.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Dep\qwtplot3d-0.2.7\qwtplot3d\src\qwt3d_autoscaler.cpp">
+      <Filter>Dependencies\Qwt3D\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Dep\qwtplot3d-0.2.7\qwtplot3d\src\qwt3d_axis.cpp">
+      <Filter>Dependencies\Qwt3D\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Dep\qwtplot3d-0.2.7\qwtplot3d\src\qwt3d_color.cpp">
+      <Filter>Dependencies\Qwt3D\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Dep\qwtplot3d-0.2.7\qwtplot3d\src\qwt3d_colorlegend.cpp">
+      <Filter>Dependencies\Qwt3D\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Dep\qwtplot3d-0.2.7\qwtplot3d\src\qwt3d_coordsys.cpp">
+      <Filter>Dependencies\Qwt3D\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Dep\qwtplot3d-0.2.7\qwtplot3d\src\qwt3d_dataviews.cpp">
+      <Filter>Dependencies\Qwt3D\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Dep\qwtplot3d-0.2.7\qwtplot3d\src\qwt3d_drawable.cpp">
+      <Filter>Dependencies\Qwt3D\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Dep\qwtplot3d-0.2.7\qwtplot3d\src\qwt3d_enrichment_std.cpp">
+      <Filter>Dependencies\Qwt3D\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Dep\qwtplot3d-0.2.7\qwtplot3d\src\qwt3d_function.cpp">
+      <Filter>Dependencies\Qwt3D\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Dep\qwtplot3d-0.2.7\qwtplot3d\src\qwt3d_gridmapping.cpp">
+      <Filter>Dependencies\Qwt3D\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Dep\qwtplot3d-0.2.7\qwtplot3d\src\qwt3d_gridplot.cpp">
+      <Filter>Dependencies\Qwt3D\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Dep\qwtplot3d-0.2.7\qwtplot3d\src\qwt3d_io.cpp">
+      <Filter>Dependencies\Qwt3D\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Dep\qwtplot3d-0.2.7\qwtplot3d\src\qwt3d_io_gl2ps.cpp">
+      <Filter>Dependencies\Qwt3D\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Dep\qwtplot3d-0.2.7\qwtplot3d\src\qwt3d_io_reader.cpp">
+      <Filter>Dependencies\Qwt3D\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Dep\qwtplot3d-0.2.7\qwtplot3d\src\qwt3d_label.cpp">
+      <Filter>Dependencies\Qwt3D\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Dep\qwtplot3d-0.2.7\qwtplot3d\src\qwt3d_lighting.cpp">
+      <Filter>Dependencies\Qwt3D\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Dep\qwtplot3d-0.2.7\qwtplot3d\src\qwt3d_meshplot.cpp">
+      <Filter>Dependencies\Qwt3D\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Dep\qwtplot3d-0.2.7\qwtplot3d\src\qwt3d_mousekeyboard.cpp">
+      <Filter>Dependencies\Qwt3D\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Dep\qwtplot3d-0.2.7\qwtplot3d\src\qwt3d_movements.cpp">
+      <Filter>Dependencies\Qwt3D\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Dep\qwtplot3d-0.2.7\qwtplot3d\src\qwt3d_parametricsurface.cpp">
+      <Filter>Dependencies\Qwt3D\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Dep\qwtplot3d-0.2.7\qwtplot3d\src\qwt3d_plot.cpp">
+      <Filter>Dependencies\Qwt3D\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Dep\qwtplot3d-0.2.7\qwtplot3d\src\qwt3d_scale.cpp">
+      <Filter>Dependencies\Qwt3D\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Dep\qwtplot3d-0.2.7\qwtplot3d\src\qwt3d_surfaceplot.cpp">
+      <Filter>Dependencies\Qwt3D\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Dep\qwtplot3d-0.2.7\qwtplot3d\src\qwt3d_types.cpp">
+      <Filter>Dependencies\Qwt3D\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Dep\qwtplot3d-0.2.7\qwtplot3d\3rdparty\gl2ps\gl2ps.c">
+      <Filter>Dependencies\gl2ps</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Dep\Qt-OpenCV-Window\QtOpenCvWidget.cpp">
+      <Filter>Dependencies\Qt-OpenCV-Window</Filter>
+    </ClCompile>
+    <ClCompile Include="RegionalSegmentationWorker.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\qrc_regionalsegmentationui.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\qrc_window_QT.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_QtOpenCvWidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_qwt3d_plot.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_qwt3d_surfaceplot.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_regionalsegmentationui.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_RegionalSegmentationWorker.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_QtOpenCvWidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_qwt3d_plot.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_qwt3d_surfaceplot.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_regionalsegmentationui.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_RegionalSegmentationWorker.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="regionalsegmentationui.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="regionalsegmentationui.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="regionalsegmentationui.qrc">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Dep\qwtplot3d-0.2.7\qwtplot3d\include\qwt3d_plot.h">
+      <Filter>Dependencies\Qwt3D\h</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Dep\qwtplot3d-0.2.7\qwtplot3d\include\qwt3d_surfaceplot.h">
+      <Filter>Dependencies\Qwt3D\h</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Dep\Qt-OpenCV-Window\window_QT.qrc">
+      <Filter>Dependencies\Qt-OpenCV-Window</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\Dep\Qt-OpenCV-Window\QtOpenCvWidget.h">
+      <Filter>Dependencies\Qt-OpenCV-Window</Filter>
+    </CustomBuild>
+    <CustomBuild Include="RegionalSegmentationWorker.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Dep\qwtplot3d-0.2.7\qwtplot3d\include\qwt3d_autoptr.h">
+      <Filter>Dependencies\Qwt3D\h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Dep\qwtplot3d-0.2.7\qwtplot3d\include\qwt3d_autoscaler.h">
+      <Filter>Dependencies\Qwt3D\h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Dep\qwtplot3d-0.2.7\qwtplot3d\include\qwt3d_axis.h">
+      <Filter>Dependencies\Qwt3D\h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Dep\qwtplot3d-0.2.7\qwtplot3d\include\qwt3d_color.h">
+      <Filter>Dependencies\Qwt3D\h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Dep\qwtplot3d-0.2.7\qwtplot3d\include\qwt3d_colorlegend.h">
+      <Filter>Dependencies\Qwt3D\h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Dep\qwtplot3d-0.2.7\qwtplot3d\include\qwt3d_coordsys.h">
+      <Filter>Dependencies\Qwt3D\h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Dep\qwtplot3d-0.2.7\qwtplot3d\include\qwt3d_drawable.h">
+      <Filter>Dependencies\Qwt3D\h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Dep\qwtplot3d-0.2.7\qwtplot3d\include\qwt3d_enrichment.h">
+      <Filter>Dependencies\Qwt3D\h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Dep\qwtplot3d-0.2.7\qwtplot3d\include\qwt3d_enrichment_std.h">
+      <Filter>Dependencies\Qwt3D\h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Dep\qwtplot3d-0.2.7\qwtplot3d\include\qwt3d_function.h">
+      <Filter>Dependencies\Qwt3D\h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Dep\qwtplot3d-0.2.7\qwtplot3d\include\qwt3d_global.h">
+      <Filter>Dependencies\Qwt3D\h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Dep\qwtplot3d-0.2.7\qwtplot3d\include\qwt3d_graphplot.h">
+      <Filter>Dependencies\Qwt3D\h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Dep\qwtplot3d-0.2.7\qwtplot3d\include\qwt3d_gridmapping.h">
+      <Filter>Dependencies\Qwt3D\h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Dep\qwtplot3d-0.2.7\qwtplot3d\include\qwt3d_helper.h">
+      <Filter>Dependencies\Qwt3D\h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Dep\qwtplot3d-0.2.7\qwtplot3d\include\qwt3d_io.h">
+      <Filter>Dependencies\Qwt3D\h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Dep\qwtplot3d-0.2.7\qwtplot3d\include\qwt3d_io_gl2ps.h">
+      <Filter>Dependencies\Qwt3D\h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Dep\qwtplot3d-0.2.7\qwtplot3d\include\qwt3d_io_reader.h">
+      <Filter>Dependencies\Qwt3D\h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Dep\qwtplot3d-0.2.7\qwtplot3d\include\qwt3d_label.h">
+      <Filter>Dependencies\Qwt3D\h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Dep\qwtplot3d-0.2.7\qwtplot3d\include\qwt3d_mapping.h">
+      <Filter>Dependencies\Qwt3D\h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Dep\qwtplot3d-0.2.7\qwtplot3d\include\qwt3d_multiplot.h">
+      <Filter>Dependencies\Qwt3D\h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Dep\qwtplot3d-0.2.7\qwtplot3d\include\qwt3d_openglhelper.h">
+      <Filter>Dependencies\Qwt3D\h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Dep\qwtplot3d-0.2.7\qwtplot3d\include\qwt3d_parametricsurface.h">
+      <Filter>Dependencies\Qwt3D\h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Dep\qwtplot3d-0.2.7\qwtplot3d\include\qwt3d_portability.h">
+      <Filter>Dependencies\Qwt3D\h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Dep\qwtplot3d-0.2.7\qwtplot3d\include\qwt3d_scale.h">
+      <Filter>Dependencies\Qwt3D\h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Dep\qwtplot3d-0.2.7\qwtplot3d\include\qwt3d_types.h">
+      <Filter>Dependencies\Qwt3D\h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Dep\qwtplot3d-0.2.7\qwtplot3d\include\qwt3d_volumeplot.h">
+      <Filter>Dependencies\Qwt3D\h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Dep\qwtplot3d-0.2.7\qwtplot3d\3rdparty\gl2ps\gl2ps.h">
+      <Filter>Dependencies\gl2ps</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_regionalsegmentationui.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Dep\Qt-OpenCV-Window\files_Qt\Milky\48\28.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Dep\Qt-OpenCV-Window\files_Qt\Milky\48\23.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Dep\Qt-OpenCV-Window\files_Qt\Milky\48\19.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Dep\Qt-OpenCV-Window\files_Qt\Milky\48\24.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Dep\Qt-OpenCV-Window\files_Qt\Milky\48\27.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Dep\Qt-OpenCV-Window\files_Qt\Milky\48\61.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Dep\Qt-OpenCV-Window\files_Qt\Milky\48\106.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Dep\Qt-OpenCV-Window\files_Qt\Milky\48\107.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Dep\Qt-OpenCV-Window\files_Qt\Milky\48\7.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Dep\Qt-OpenCV-Window\files_Qt\Milky\48\38.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Dep\Qt-OpenCV-Window\files_Qt\stylesheet_trackbar.qss">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="examples">
+</Property><Property Name="Solution File" Value="D:\DropBox\Dropbox\Private\My Thesis\SegmentationRegional\Dep\qwtplot3d-0.2.7\qwtplot3d\examples\examples.sln">
+</Property><Property Name="Date" Value="Friday, June 10, 2011">
+</Property><Property Name="Time" Value="23:38 PM">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="examples.sln" Description="File successfully backed up as D:\DropBox\Dropbox\Private\My Thesis\SegmentationRegional\Dep\qwtplot3d-0.2.7\qwtplot3d\examples\examples.sln.old">
+</Event><Event ErrorLevel="0" Project="autoswitch" Source="autoswitch\autoswitch.vcproj" Description="Converting project file 'D:\DropBox\Dropbox\Private\My Thesis\SegmentationRegional\Dep\qwtplot3d-0.2.7\qwtplot3d\examples\autoswitch\autoswitch.vcproj'.">
+</Event><Event ErrorLevel="2" Project="autoswitch" Source="autoswitch\autoswitch.vcproj" Description="File 'D:\DropBox\Dropbox\Private\My Thesis\SegmentationRegional\Dep\qwtplot3d-0.2.7\qwtplot3d\examples\autoswitch\autoswitch.vcproj' was not found.">
+</Event><Event ErrorLevel="2" Project="autoswitch" Source="autoswitch\autoswitch.vcproj" Description="Project upgrade failed.">
+</Event><Event ErrorLevel="3" Project="autoswitch" Source="autoswitch\autoswitch.vcproj" Description="Not Converted">
+</Event><Event ErrorLevel="0" Project="axes" Source="axes\axes.vcproj" Description="Converting project file 'D:\DropBox\Dropbox\Private\My Thesis\SegmentationRegional\Dep\qwtplot3d-0.2.7\qwtplot3d\examples\axes\axes.vcproj'.">
+</Event><Event ErrorLevel="2" Project="axes" Source="axes\axes.vcproj" Description="File 'D:\DropBox\Dropbox\Private\My Thesis\SegmentationRegional\Dep\qwtplot3d-0.2.7\qwtplot3d\examples\axes\axes.vcproj' was not found.">
+</Event><Event ErrorLevel="2" Project="axes" Source="axes\axes.vcproj" Description="Project upgrade failed.">
+</Event><Event ErrorLevel="3" Project="axes" Source="axes\axes.vcproj" Description="Not Converted">
+</Event><Event ErrorLevel="0" Project="enrichments" Source="enrichments\enrichments.vcproj" Description="Converting project file 'D:\DropBox\Dropbox\Private\My Thesis\SegmentationRegional\Dep\qwtplot3d-0.2.7\qwtplot3d\examples\enrichments\enrichments.vcproj'.">
+</Event><Event ErrorLevel="2" Project="enrichments" Source="enrichments\enrichments.vcproj" Description="File 'D:\DropBox\Dropbox\Private\My Thesis\SegmentationRegional\Dep\qwtplot3d-0.2.7\qwtplot3d\examples\enrichments\enrichments.vcproj' was not found.">
+</Event><Event ErrorLevel="2" Project="enrichments" Source="enrichments\enrichments.vcproj" Description="Project upgrade failed.">
+</Event><Event ErrorLevel="3" Project="enrichments" Source="enrichments\enrichments.vcproj" Description="Not Converted">
+</Event><Event ErrorLevel="0" Project="mesh2" Source="mesh2\mesh2.vcproj" Description="Converting project file 'D:\DropBox\Dropbox\Private\My Thesis\SegmentationRegional\Dep\qwtplot3d-0.2.7\qwtplot3d\examples\mesh2\mesh2.vcproj'.">
+</Event><Event ErrorLevel="2" Project="mesh2" Source="mesh2\mesh2.vcproj" Description="File 'D:\DropBox\Dropbox\Private\My Thesis\SegmentationRegional\Dep\qwtplot3d-0.2.7\qwtplot3d\examples\mesh2\mesh2.vcproj' was not found.">
+</Event><Event ErrorLevel="2" Project="mesh2" Source="mesh2\mesh2.vcproj" Description="Project upgrade failed.">
+</Event><Event ErrorLevel="3" Project="mesh2" Source="mesh2\mesh2.vcproj" Description="Not Converted">
+</Event><Event ErrorLevel="0" Project="qwtplot3d" Source="..\qwtplot3d.vcproj" Description="Converting project file 'D:\DropBox\Dropbox\Private\My Thesis\SegmentationRegional\Dep\qwtplot3d-0.2.7\qwtplot3d\qwtplot3d.vcproj'.">
+</Event><Event ErrorLevel="2" Project="qwtplot3d" Source="..\qwtplot3d.vcproj" Description="File 'D:\DropBox\Dropbox\Private\My Thesis\SegmentationRegional\Dep\qwtplot3d-0.2.7\qwtplot3d\qwtplot3d.vcproj' was not found.">
+</Event><Event ErrorLevel="2" Project="qwtplot3d" Source="..\qwtplot3d.vcproj" Description="Project upgrade failed.">
+</Event><Event ErrorLevel="3" Project="qwtplot3d" Source="..\qwtplot3d.vcproj" Description="Not Converted">
+</Event><Event ErrorLevel="0" Project="simpleplot" Source="simpleplot\simpleplot.vcproj" Description="Converting project file 'D:\DropBox\Dropbox\Private\My Thesis\SegmentationRegional\Dep\qwtplot3d-0.2.7\qwtplot3d\examples\simpleplot\simpleplot.vcproj'.">
+</Event><Event ErrorLevel="2" Project="simpleplot" Source="simpleplot\simpleplot.vcproj" Description="File 'D:\DropBox\Dropbox\Private\My Thesis\SegmentationRegional\Dep\qwtplot3d-0.2.7\qwtplot3d\examples\simpleplot\simpleplot.vcproj' was not found.">
+</Event><Event ErrorLevel="2" Project="simpleplot" Source="simpleplot\simpleplot.vcproj" Description="Project upgrade failed.">
+</Event><Event ErrorLevel="3" Project="simpleplot" Source="simpleplot\simpleplot.vcproj" Description="Not Converted">
+</Event><Event ErrorLevel="0" Project="" Source="examples.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="examples.sln" Description="Converted">
+</Event></UpgradeLog>
